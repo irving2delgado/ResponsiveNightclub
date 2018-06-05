@@ -1,0 +1,359 @@
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+ @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+@keyframes slidy {
+0% { left: 0%; }
+
+25% { left: 0%; }
+
+50% { left: -100%; }
+
+75% { left: -100%; }
+
+100% { left: 00%; }
+/*0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }*/
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 10s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; 
+  height: auto;
+  opacity: 4; 
+}
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem;
+  text-align: center; 
+     animation: 1s ease-out 0s 1 slideInFromLeft; 
+
+}
+
+.navMenu {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  z-index: 2;
+  background: linear-gradient(to bottom, #333, #101010 );
+
+}
+
+.navMenu a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 1em;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+       animation: 1s ease-out 0s 1 slideInFromRight; 
+
+}
+
+.section2 {
+  color: white;
+  font-family: Istok Web, sans-serif;
+  background: linear-gradient(to bottom, #101010 , #333);
+  text-align: center;
+
+}
+
+header {
+  margin: 25px 0px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+hr {
+  width: 270px;
+  margin: ;
+    box-shadow: 0px 0px 8px 8px #333;
+
+}
+
+.showcase > div {
+  margin: 55px auto;
+  background: none;
+  padding: 0px 20px;
+  
+}
+
+.showcase img {
+  margin: 0 auto;
+  display: block;
+  width: ;
+  max-width: 100% ;
+  height: auto ;
+  padding: 0px 0px;
+  border-radius: 15px;
+  
+  box-shadow: 0px 0px 5px 5px #333;
+}
+
+
+#fixedsocial {
+    top:90%;
+    height:200px;
+    width:60px;
+    position:fixed;
+    right: 0;
+}
+
+.facebookflat {
+    background:url("https://i1.wp.com/seekingtumnus.com/wp-content/uploads/2015/09/FB.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50px;
+    width:50px;
+   transition:ease 500ms;
+    background-size:50px;
+    opacity:1;
+}
+
+.facebookflat:hover {
+     background:url("https://i1.wp.com/seekingtumnus.com/wp-content/uploads/2015/09/FB.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50px;
+    width:50px;
+    background-size:60px;
+    opacity:0.2;
+    transition:ease 500ms;
+    margin-left:-20px;
+    width:70px;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+    padding-top: 10px;
+      background: linear-gradient(to bottom, #333, black);
+      z-index: 3;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+}
+.footer li {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px 25px;
+  font-size: 25px;
+}
+/**************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************/
+@media (min-width: 700px) {
+  @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+  div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+  height: 100vh;
+}
+
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 10s slidy infinite; 
+}
+
+figure.slider figure { 
+  width: 20%; height: 100vh;
+  display: inline-block;  position: inherit; 
+}
+
+figure.slider img { width: 100%; height: 100vh; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 50%;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem;
+  text-align: center;
+   animation: 1s ease-out 0s 1 slideInFromLeft; 
+}
+  .navMenu {
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+    padding-top: 10px;
+    background: #333;
+    background: linear-gradient(to bottom, #333, #101010);
+
+  }
+
+  .navMenu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 25px 25px;
+    font-size: 25px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+  }
+  .navMenu a:hover {
+    background-color: black;
+    z-index: 2;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: all .9s ease-in-out;
+
+  }
+
+  .section2 {
+  /*background: url('https://images.unsplash.com/photo-1504280539878-538b933c05b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f5ab5c7acc7188c3128f7974d3e504e5&auto=format&fit=crop&w=1350&q=80');
+   background-size: cover;
+    opacity: 2;
+    filter: grayscale(20%);*/
+    background-color: black;
+    background: linear-gradient(to bottom, #101010 , #333);
+    position: relative;
+    display: grid;
+    grid-auto-flow: row dense;
+    overflow: auto;
+    grid-gap: 15px;
+    padding: 15px;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 25px;
+  }
+
+  .showcase {
+    display: grid;
+    grid-gap: 15px;
+    grid-area: ;
+    min-height: ;
+    background-color: ;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .showcase > div {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 25px;
+  }
+
+  .fbFeed {
+  margin-top: 0px;
+  padding-top: 25px;
+  background-color: grey;
+}
+
+header {
+ text-align: center;
+  color: white;
+  margin: 95px 0px;
+  font-size: 45px
+}
+hr {
+  width: 75%;
+  margin: ;
+    box-shadow: 0px 0px 8px 8px #333;
+
+}
+
+.showcase > div img:hover {
+  opacity: 4;
+  transform: scale(1.1);
+  
+  transition: all .6s ease-in-out;
+}
+
+ .showcase h1{
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+    font-size: 30px;
+
+ }
+
+.showcase img {
+  margin:;
+  height: 400px;
+  width: 300px;
+  border-radius: 15px;
+  border: solid #333;
+  box-shadow: 0px 0px 10px 10px #333;
+  font-size: 40px;
+}
+  
+}
