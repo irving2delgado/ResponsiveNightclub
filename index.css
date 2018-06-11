@@ -126,18 +126,18 @@ hr {
 }
 
 .showcase > div {
-  margin: 55px auto;
+  margin: 30px 30px;
   background: none;
-  padding: 0px 20px;
+  padding: 0px 0px;
   
 }
 
 .showcase img {
   margin: 0 auto;
   display: block;
-  width: ;
+  width: 350px;
   max-width: 100% ;
-  height: auto ;
+  height: 450px ;
   padding: 0px 0px;
   border-radius: 15px;
   
